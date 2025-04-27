@@ -3,7 +3,7 @@ import WorkExperience from "./WorkExperience"
 const Experience = () => {
     return (
         <div className="w-1/2 flex flex-col gap-8">
-            <p className="text-3xl">Experience </p>
+            <p className="text-3xl">Experience 💼</p>
             <div className="flex flex-col gap-16">
                 <WorkExperience 
                     title="Loblaws - Real Canadian Superstore - Replenishment Clerk PT"
