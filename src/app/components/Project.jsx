@@ -1,5 +1,6 @@
 import Image from "next/image"
 import ProjectLinks from "./ProjectLinks"
+import ProjectTechnologies from "./ProjectTechnologies"
 
 const Project = (props) => {
     return (
@@ -20,24 +21,8 @@ const Project = (props) => {
             <div className="">
                 <p className="text-lg font-bold py-2">Technologies</p>
                 <div className="flex flex-wrap gap-2">
-                    <div className="bg-black text-white font-bold text-lg text-center px-4 py-2 rounded-3xl">
-                        <p>Next.js</p>
-                    </div>
-                    <div className="bg-blue-500 text-white font-bold text-lg text-center px-4 py-2 rounded-3xl">
-                        <p>React</p>
-                    </div>
-                    <div className="bg-purple-600 text-white font-bold text-lg text-center px-4 py-2 rounded-3xl">
-                        <p>Drizzle</p>
-                    </div>
-                    <div className="bg-blue-400 text-white font-bold text-lg text-center px-4 py-2 rounded-3xl">
-                        <p>Google Cloud</p>
-                    </div>
-                    <div className="bg-black text-white font-bold text-lg text-center px-4 py-2 rounded-3xl">
-                        <p>Vercel</p>
-                    </div>
-                    <div className="bg-indigo-700 text-white font-bold text-lg text-center px-4 py-2 rounded-3xl">
-                        <p>SQL</p>
-                    </div>
+                    <ProjectTechnologies technologies={props.technologies} />
+                    
                 </div>
             </div>
         </div>
