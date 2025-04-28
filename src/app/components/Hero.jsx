@@ -2,9 +2,9 @@ import Image from "next/image"
 
 const Hero = () => {
     return(
-        <div className="flex justify-center my-8">
-            <div className="flex flex-col p-4 text-white justify-around border-3 border-gray-400 rounded-xl">
-                <div className="p-4 gap-16 flex flex-row items-center border-b-2 border-gray-700">
+        <div className="flex justify-center my-8 w-1/2">
+            <div className="flex flex-col p-4 text-white justify-around border-3 border-gray-400 rounded-xl w-full">
+                <div className="p-4 gap-16 flex flex-row items-center justify-center border-b-2 border-gray-700">
                     <div>
                         <Image 
                             src="/headshot.jpg"

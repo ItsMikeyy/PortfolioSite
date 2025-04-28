@@ -7,7 +7,6 @@ export default function Home() {
     <div>
       <div className="flex flex-col gap-8 justify-center w-full items-center py-8">
         <Hero />
-        <hr className="bg-gray-400 text-gray-400"></hr>
         <Skills />
         <Experience />
         <Projects />
