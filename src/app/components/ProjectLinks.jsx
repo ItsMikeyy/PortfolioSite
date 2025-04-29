@@ -1,58 +1,30 @@
-const ProjectLinks = (props) => {
-    let buttons = <div className="flex justify-start gap-4"></div>
-
-    if (props.liveLink && props.githubLink) {
-        buttons = 
-            (
-                <div className="flex justify-start gap-4">
-                    <a
-                        href={props.githubLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="px-4 py-2 bg-gray-800 text-white rounded-lg font-semibold hover:bg-gray-700 transition"
-                    >
-                        GitHub
-                    </a>
-
-                    <a
-                        href={props.liveLink}
-                        target="_blank"
-                        rel=""
-                        className="px-4 py-2 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-500 transition"
-                    >
-                        View Live
-                    </a>
-            </div>
-        )
-    } else if (props.liveLink ) {
-        buttons = (
-            <div className="flex justify-start gap-4">
-                <a
-                    href={props.liveLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-4 py-2 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-500 transition"
-                >
-                View Live
-                </a>
-            </div>
-        )
-    } else if (props.githubLink) {
-        buttons = (
-            <div className="flex justify-start gap-4">
-                <a
-                    href={props.githubLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-4 py-2 bg-gray-800 text-white rounded-lg font-semibold hover:bg-gray-700 transition"
-                >
-                    GitHub
-                </a>
-            </div>
-        )
-    }
+const ProjectLinks = ({ githubLink, liveLink }) => {
     return (
-        buttons
-    )
-}
-export default ProjectLinks
+      <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+        {githubLink && (
+          <a
+            href={githubLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 py-2 bg-gray-800 text-white text-center rounded-lg font-semibold hover:bg-gray-700 transition w-full sm:w-auto"
+          >
+            GitHub
+          </a>
+        )}
+  
+        {liveLink && (
+          <a
+            href={liveLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 py-2 bg-blue-600 text-white text-center rounded-lg font-semibold hover:bg-blue-500 transition w-full sm:w-auto"
+          >
+            View Live
+          </a>
+        )}
+      </div>
+    );
+  };
+  
+  export default ProjectLinks;
+  

@@ -20,14 +20,21 @@ const Skills = () => {
       ];
       
     return (
-        <div className="w-1/2 flex flex-col gap-8">
-            <p className="text-3xl ">Skills 🎯</p>
-            <div className="w-full flex gap-4 flex-row flex-wrap justify-center" >
+        <div className="w-full max-w-4xl flex flex-col gap-8 px-4">
+            <p className="text-3xl text-center sm:text-left">Skills 🎯</p>
+
+            <div className="w-full flex gap-4 flex-wrap justify-center sm:justify-start">
                 {skills.map(({ name, textColor, bgColor }) => (
-                    <Skill key={name} skillName={name} textColor={textColor} bgColor={bgColor} />
+                    <Skill
+                    key={name}
+                    skillName={name}
+                    textColor={textColor}
+                    bgColor={bgColor}
+                    />
                 ))}
             </div>
         </div>
+
     )
 }
 

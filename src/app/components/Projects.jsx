@@ -28,34 +28,34 @@ const Projects = () => {
     ];
 
     return (
-        <div className="w-1/2 flex flex-col gap-8">
+        <div className="w-full lg:w-3/5 px-4 sm:px-6 lg:px-0 mx-auto flex flex-col gap-8">
             <p className="text-3xl">Projects 🚀</p>
             <div className="flex flex-col gap-16">
                 <div className="p-2 border-2 rounded-md">
-                    <Project 
-                        title="Blackjack" 
-                        date="April 2025" 
-                        summary="Developed a fully functional Blackjack game using Godot Engine and GDScript. The game includes card dealing, player interactions, and game logic, with a focus on 2D game development and UI/UX design. Implemented event handling for player actions such as hitting and standing, creating an engaging and interactive experience." 
+                    <Project
+                        title="Blackjack"
+                        date="April 2025"
+                        summary="Developed a fully functional Blackjack game using Godot Engine and GDScript. The game includes card dealing, player interactions, and game logic, with a focus on 2D game development and UI/UX design. Implemented event handling for player actions such as hitting and standing, creating an engaging and interactive experience."
                         technologies={technologies[0]}
-                        links={["",""]}
+                        links={["", ""]}
                     />
                 </div>
                 <div className="p-2 border-2 rounded-md">
-                    <Project 
-                        title="GoFit" 
-                        date="Jan 2025 - present" 
-                        summary="I developed a web application using Next.js, SQLite, and Drizzle for workout, nutrition, and progress tracking. I implemented secure, cloud-based authentication with NextAuth and Google Cloud APIs, and designed responsive, intuitive user interfaces optimized for both mobile and desktop experiences." 
+                    <Project
+                        title="GoFit"
+                        date="Jan 2025 - present"
+                        summary="I developed a web application using Next.js, SQLite, and Drizzle for workout, nutrition, and progress tracking. I implemented secure, cloud-based authentication with NextAuth and Google Cloud APIs, and designed responsive, intuitive user interfaces optimized for both mobile and desktop experiences."
                         technologies={technologies[1]}
                         links={["https://github.com/ItsMikeyy/GoFit", "https://go-fit-kappa.vercel.app/"]}
                     />
                 </div>
                 <div className="p-2 border-2 rounded-md">
-                    <Project 
-                        title="Event Check-In App" 
-                        date="Jan 2024 - Apr 2024" 
-                        summary="Led a team of five in developing a mobile event check-in app, featuring QR code sign-ups and event creation. Utilized Figma for UI/UX design, Android Studio for development, and Firebase for database and authentication. Collaborated through GitHub and followed Agile practices to deliver a seamless, user-friendly experience." 
+                    <Project
+                        title="Event Check-In App"
+                        date="Jan 2024 - Apr 2024"
+                        summary="Led a team of five in developing a mobile event check-in app, featuring QR code sign-ups and event creation. Utilized Figma for UI/UX design, Android Studio for development, and Firebase for database and authentication. Collaborated through GitHub and followed Agile practices to deliver a seamless, user-friendly experience."
                         technologies={technologies[2]}
-                        links={["https://github.com/CMPUT301W24T38/Collatz301",""]}
+                        links={["https://github.com/CMPUT301W24T38/Collatz301", ""]}
                     />
                 </div>
             </div>
