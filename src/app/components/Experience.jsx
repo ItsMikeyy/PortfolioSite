@@ -2,7 +2,7 @@ import WorkExperience from "./WorkExperience"
 
 const Experience = () => {
     return (
-        <div className="w-full md:w-1/2 px-4 sm:px-10 lg:px-0 mx-auto flex flex-col gap-8">
+        <div className="w-full lg:w-3/5 px-4 sm:px-6 lg:px-0 mx-auto flex flex-col gap-8">
             <p className="text-3xl">Experience 💼</p>
             <div className="flex flex-col gap-16">
                 <WorkExperience
